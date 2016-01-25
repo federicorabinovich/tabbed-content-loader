@@ -1,0 +1,120 @@
+.tabbed-content-module{
+	width:100%;
+}
+/*---------------------------------- NAVIGATION STYLE-------------------------------*/
+.tabbed-content-module nav{
+	width:28%;
+	padding: 0 4%;
+	display:inline-block;
+	vertical-align: top;
+}
+.tabbed-content-module ul{
+	list-style-type: none;
+}
+.tabbed-content-module li{
+	position:relative;
+}
+.tabbed-content-module li a{
+	display: block;
+	text-decoration:none;
+	color: inherit;
+	padding:10px 15px 10px 10px;
+	width:100%;
+	margin-bottom:5px;
+	font-size: 1.125em;
+	  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.tabbed-content-module li a:after{
+	width: 9px;
+	height: 21px;
+	background-image:url('img/arrow.png');
+	right: -9px;
+	position:absolute;
+	content: "";
+}
+.tabbed-content-module li a:hover, .tabbed-content-module li a.active{
+	border-radius: 5px;
+	background-color: #fedb00;
+}
+
+
+/*---------------------------------- CONTENT STYLE-------------------------------*/
+.tabbed-content-module .tabs-content{
+	width: 55%;
+	padding: 0 4%;
+	display:inline-block;
+	vertical-align: top;
+}
+.tabbed-content-module article{	
+	display:none;
+}
+.tabbed-content-module article.active{
+	display:block;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*		MOBILE DEVICES LAYOUT	MOBILE DEVICES LAYOUT	MOBILE DEVICES LAYOUT	MOBILE DEVICES LAYOUT	MOBILE DEVICES LAYOUT	MOBILE DEVICES LAYOUT			*/
+
+/*		You can change starting screen width to be consider Mobile by changing media query heading 
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (max-width: 768px){
+
+
+	/*---------------------------------- NAVIGATION STYLE-------------------------------*/
+	.tabbed-content-module nav{
+		width:100%;
+		padding: 0;
+		display:block;
+	}
+	.tabbed-content-module ul{
+		overflow:hidden;
+	}
+	.tabbed-content-module li a{
+		padding: 20px 15px 20px 10px;
+		margin:0;
+		font-size: 1.5em;
+		border-bottom: 1px solid #ebebeb;
+		box-sizing: border-box;
+			
+	}
+	.tabbed-content-module li a:after{
+		width: 0;
+		height: 0;
+		background-image:none;
+		right: 30px;
+		top:15px;
+		position:absolute;
+		font-size: 1.5em;
+		font-family: arial, sans-serif;
+		content: "+";
+	}
+	.tabbed-content-module li a:hover, .tabbed-content-module li a.active{
+		border-radius: 0;
+		border-bottom:1px solid transparent;
+	}
+	.tabbed-content-module li a.active:after{
+		content: "-";
+		right: 27px;
+	}
+	.tabbed-content-module li a.active{
+		color: #ebebeb;
+	}
+
+
+	/*---------------------------------- CONTENT STYLE-------------------------------*/
+	.tabbed-content-module article{	
+		margin: 25px 0;
+		width: 94%;
+		padding: 0 3%;
+	}
+
+}/*-----ends media query------
+

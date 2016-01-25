@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="tabbed-content-module/tabbed-content-module-style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>Tabbed Content Module</title>
+	</head>
+	<body>
+		<header>
+			<section class="wrapper">
+				<h1>How to Meet WCAG 2.0</h1>
+				<h2>A customizable quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques</h2>
+			</section>
+		</header>
+		<main>
+			<div class="wrapper tabbed-content-module">
+				<nav>
+					<ul>
+						<li><a class="active" href="#tab1">1.1 – Text Alternatives</a></li>
+						<li><a href="#tab2">1.2 – Time-based Media</a></li>
+						<li><a href="#tab3">1.3 – Adaptable</a></li>
+						<li><a href="#tab4">1.4 – Distinguishable</a></li>
+						<li><a href="#tab5">2.1 – Keyboard Accessible</a></li>
+					</ul>
+				</nav>
+				<div class="tabs-content">				
+					<article id="tab1">
+						<h3>Guideline 1.1 – Text Alternatives</h3>
+						<p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br>
+						All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below</p>
+					</article>
+					<article id="tab2">
+						<h3>Guideline 1.2 – Time-based Media</h3>
+						<p>Provide alternatives for time-based media.<br>
+						For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:<br>
+						Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.<br>
+						An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.</p>
+					</article>
+					<article id="tab3">
+						<h3>Guideline 1.3 – Adaptable</h3>
+						<p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.<br>
+						Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.<br>
+						When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined<br>
+						Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.</p>
+					</article>
+					<article id="tab4">
+						<h3>Guideline 1.4 – Distinguishable</h3>
+						<p>Make it easier for users to see and hear content including separating foreground from background<br>
+						Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.<br>
+						If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.<br>
+						The visual presentation of text and images of text has a contrast ratio of at least 4.5:1</p>
+					</article>
+					<article id="tab5">
+						<h3>Guideline 2.1 – Keyboard Accessible</h3>
+						<p>Make all functionality available from a keyboard.<br>
+						All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.<br>
+						If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.<br>
+						All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.</p>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+		</footer> 
+		<script src="tabbed-content-module/tabbed-content-module.min.js"></script>
+	</body>
+</html>
